@@ -4,19 +4,15 @@ import pandas as pd
 start = time.time()
 df_chunks =  pd.read_json('list.json', lines=True, chunksize=100)
 
-tags = {}
+ftags = {}
 for chunk in df_chunks:
-    chunk = chunk.dropna(subset=['tags'])
-    for tag in chunk['tags']:
-        if tag != []:
-            for i in tag:
-                if i in tags.keys():
-                    tags[i] +=1
-                else:
-                    tags[i] = 1
+    chunk = chunk['tags'].apply(lambda x: x if x != [] else None).dropna()
+    for taglist in chunk:
+        for tag in taglist:
+            ftags[tag] = ftags.get(tag, 0) + 1
 
-sorted_tags = sorted(tags.items(), key=lambda x: x[1], reverse=True)
+sorted_tags = sorted(ftags.items(), key=lambda x: x[1], reverse=True)
 df = pd.DataFrame(sorted_tags[:5], columns=['tag', '#usage'])
 df.set_index('tag', inplace=True)
 
-print(f"Time elapsed: {time.time() - start} seconds")
+print(f"Time of execution: {time.time() - start} seconds")
