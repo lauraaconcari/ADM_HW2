@@ -36,7 +36,7 @@ The repository consists of the following files:
 		
 2. __`commandline_LLM.ps1`__:
 	> A script that reports the title of the top 5 series with the highest total 'books_count' among all of their associated books using command line tools.
-3. __`commandline_originals.ps1`__:
+3. __`commandline_original.ps1`__:
 	> A more robust script for the same purpose implemented by an LLM
 4. __`AWSQ`__:
    > A folder containing the python code and the cvs for the AWSQ
