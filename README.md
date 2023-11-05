@@ -34,10 +34,11 @@ The repository consists of the following files:
        
      - Algorithmic Question (AQ)
 		
-2. __`commandline_LLM.ps1`__:
-	> A script that reports the title of the top 5 series with the highest total 'books_count' among all of their associated books using command line tools.
-3. __`commandline_original.ps1`__:
-	> A more robust script for the same purpose implemented by an LLM
+2. __`commandline_original.ps1`__:
+   	> A script that reports the title of the top 5 series with the highest total 'books_count' among all of their associated books using command line tools. (CLQ1)
+	
+3. __`commandline_LLM.ps1`__:
+	> A more robust script for the same purpose implemented by an LLM (CLQ2)
 4. __`AWSQ`__:
    > A folder containing the python code and the cvs for the AWSQ
  
