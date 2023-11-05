@@ -1,7 +1,7 @@
 # ADM_HW2 - The Best Books of All Time
 Algorithmic Methods of Data Mining (Sc.M. in Data Science) Academic year 2023–2024. Homewok 2 
 The repository consists of the following files:
-1. __`ADM_HW2_Full.ipynb`__: 
+1. __`HW2_Finale.ipynb`__: 
 	> A Jupyter notebook which provides the solutions to all research questions.
  
     - Research questions [RQs]
@@ -34,11 +34,11 @@ The repository consists of the following files:
        
      - Algorithmic Question (AQ)
 		
-2. __commandline_LLM.ps1__:
+2. __`commandline_LLM.ps1`__:
 	> A script that reports the title of the top 5 series with the highest total 'books_count' among all of their associated books using command line tools.
-3. __commandline_originals.ps1__:
+3. __`commandline_originals.ps1`__:
 	> A more robust script for the same purpose implemented by an LLM
-4. __AWSQ__:
+4. __`AWSQ`__:
    > A folder containing the python code and the cvs for the AWSQ
  
 
